@@ -19,6 +19,10 @@ public class Book {
         return publishingYear;
     }
 
+    public String getAuthor() {
+        return author.getFirstName() + " " + author.getLastName();
+    }
+
     @Override
     public boolean equals(Object o) {
         if (o != null && o.getClass() == getClass()) {
